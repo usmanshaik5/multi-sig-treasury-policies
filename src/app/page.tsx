@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Shield, Lock, Clock, AlertTriangle, TrendingUp, Users, FileText, CheckCircle } from "lucide-react"
 import Link from "next/link"
+import { WalletButton } from "@/components/wallet/WalletButton"
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
               <Shield className="h-8 w-8 text-primary" />
               <span className="text-2xl font-bold">MultiSig Treasury</span>
             </div>
-            <div className="flex gap-4">
+            <div className="flex gap-4 items-center">
               <Link href="/dashboard">
                 <Button variant="ghost">Dashboard</Button>
               </Link>
@@ -28,8 +29,9 @@ export default function Home() {
                 <Button variant="ghost">Policies</Button>
               </Link>
               <Link href="/deployment">
-                <Button>Deploy</Button>
+                <Button variant="ghost">Deploy</Button>
               </Link>
+              <WalletButton />
             </div>
           </div>
         </div>
