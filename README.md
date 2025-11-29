@@ -424,7 +424,6 @@ MIT License - See LICENSE file
 4. Push to branch (`git push origin feature/amazing-feature`)
 5. Open Pull Request
 
-## 👥 Team
 
 Built for the **Sui Multi-Signature Treasury Hackathon**
 
